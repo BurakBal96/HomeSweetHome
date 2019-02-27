@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="@string/ShoppingMenu_Actions" />
+
+
+    <item
+        android:id="@+id/menu_save"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_check_green_48dp"
+        android:title="@string/ShoppingMenu_Save" />
+
+
+    <item
+    android:id="@+id/menu_remove_purchased"
+    android:orderInCategory="2"
+    app:showAsAction="never"
+    android:icon="@drawable/ic_refuse_red_48dp"
+    android:title="@string/ShoppingMenu_RemovePurchased" />
+
+    <item
+        android:id="@+id/menu_notification"
+        android:orderInCategory="3"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        android:title="@string/ShoppingMenu_Notifications" />
+
+
+
+</menu>

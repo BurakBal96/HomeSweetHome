@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:layout_margin="3dp"
+        android:text="test"
+        android:textSize="20sp"
+        android:id="@+id/shopping_recyc_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--
+    <TextView
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/shopping_recyc_check"
+        android:layout_alignParentEnd="true"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+    -->
+
+</RelativeLayout>

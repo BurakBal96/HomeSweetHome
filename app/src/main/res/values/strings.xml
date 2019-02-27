@@ -1,0 +1,778 @@
+<resources>
+    <string name="app_name">HomeSweetHome</string>
+
+    <!--
+        The following are the 2 field server ip and port sections.
+        Must be set according to the server to which the application will connect
+     -->
+    <string name="server_ip_adress">http://test.net</string>
+    <string name="server_port">35423</string>
+
+    <!--
+       The following 2 domains are required for the Google Vision API
+       These fields must be filled correctly
+    -->
+    <string name="CLOUD_VISION_API_KEY">test-test</string>
+    <string name="ANDROID_CERT_HEADER">X-Android-Cert</string>
+    <string name="ANDROID_PACKAGE_HEADER">X-Android-Package</string>
+
+    <string name="action_register">/api/authentication/register</string>
+    <string name="action_login">/api/authentication/login</string>
+    <string name="action_verification">/api/authentication/emailverification</string>
+    <string name="action_verify">/api/authentication/verifyemail</string>
+    <string name="action_invitehomeaccept">/api/home/invitehomeaccept</string>
+    <string name="action_joinhomeaccept">/api/home/joinhomeaccept</string>
+    <string name="action_invitehomerequest">/api/home/invitehomerequest</string>
+    <string name="action_joinhomerequest">/api/home/joinhomerequest</string>
+    <string name="action_createhome">/api/home/createnewhome</string>
+    <string name="action_addnote">/api/notepad/addnote</string>
+    <string name="action_deletenote">/api/notepad/deletenote</string>
+    <string name="action_updatenote">/api/notepad/updatenote</string>
+    <string name="action_updateshoppinglist">/api/ShoppingList/UpdateShoppingList</string>
+    <string name="action_shoppingnotification">/api/ShoppingList/SendNotification</string>
+    <string name="action_addexpense">/api/expense/addexpense</string>
+    <string name="action_leavehome">/api/home/leavehome</string>
+    <string name="action_addmeal">/api/menu/addmeal</string>
+    <string name="action_addmenu">/api/menu/addmenu</string>
+    <string name="action_deletemenu">/api/menu/deletemenu</string>
+    <string name="action_updatemenu">/api/menu/updatemenu</string>
+    <string name="action_updatemeal">/api/menu/updatemeal</string>
+    <string name="action_updateexpense">/api/expense/UpdateExpense</string>
+    <string name="action_deleteexpense">/api/expense/DeleteExpense</string>
+    <string name="action_addduty">/api/housework/addhousework</string>
+    <string name="action_deleteduty">/api/housework/deletehousework</string>
+
+
+    <string name="action_sync_menu">/api/Menu/SynchronizeMenus</string>
+    <string name="action_sync_meals">/api/Menu/SynchronizeMeals</string>
+    <string name="action_sync_notepad">/api/Notepad/Synchronize</string>
+    <string name="action_sync_shopping">/api/ShoppingList/Synchronize</string>
+    <string name="action_sync_duty">/api/housework/synchronize</string>
+    <string name="action_numberOfSyncItem">5</string>
+
+
+    <string name="SignUpTitle">Register</string>
+    <string name="LoginTitle">Login</string>
+    <string name="ForgotPasswordTitle">Password Reset</string>
+
+
+    <string name="LoginButton">Login</string>
+    <string name="ForgotPasswordButton">Forgot Password</string>
+    <string name="SignUpButton">Register</string>
+    <string name="Dogrula">Verify</string>
+    <string name="YenidenGonder">Send Again</string>
+    <string name="EmailGonderildiBildirimi">Email was sent again. Plase check the spam inbox</string>
+    <string name="LogOut">Logout</string>
+    <string name="LoginProgressContent">Logging in</string>
+    <string name="RegisterProgressContent">Registering in</string>
+    <string name="SynchronizeProgressContent">Synchronizing</string>
+
+
+    <string name="UsernameTextHint">User Name</string>
+    <string name="PasswordTextHint">Password</string>
+    <string name="Ad">Name</string>
+    <string name="Soyad">Surname</string>
+    <string name="email">E-Mail</string>
+    <string name="phone">Telephone: ( With Locale )</string>
+    <string name="sifremihatirla">Remember my password</string>
+    <string name="autologin">Auto Login</string>
+
+    <string name="signup_ok">Registeration successfully completed</string>
+    <string name="signup_ok_msg">After your first login, verification e-mail will send.
+        \nPlease verify your account
+        \n\nNote : Sometimes e-mail may fall spam inbox</string>
+    <string name="signup_ok_button">Confirm</string>
+
+    <string name="error_server_not_respond">Server not respond</string>
+    <string name="SignUp_Error_Username">User name must longer than 3, shorter than 20 letters</string>
+    <string name="SignUp_Error_Password">Password must longer than 6 letters</string>
+    <string name="SignUp_Error_PasswordNotMatched">Passwords not match</string>
+    <string name="SignUp_Error_EmailNotMatched">E-mails not match</string>
+    <string name="SignUo_Error_PhoneFormatError">Phone number format is not correct</string>
+    <string name="SignUp_UserAgreement">Agreement</string>
+
+    <string name="Menu_edit">Edit</string>
+    <string name="Menu_delete">Delete</string>
+
+    <string name="SignUp_Error_CannotBeEmpty">This field cannot be empty</string>
+
+    <string name="tablo_position_error_title">First, you need to join a home</string>
+    <string name="tablo_position_error_content">When you doesnt have a home, you can not use this features</string>
+
+    <string name="tablo_gidertakip">Expense Table</string>
+    <string name="tablo_gidertakip_aciklama">In here, you can track the expenses</string>
+
+    <string name="tablo_alisverislistesi">Shopping List</string>
+    <string name="tablo_alisverislistesi_aciklama">In here, you can control the shopping list for home</string>
+
+    <string name="tablo_notlar">Notes</string>
+    <string name="tablo_notlar_aciklama">In here, you can take notes for home</string>
+
+    <string name="tablo_ispaylasimi">Chores </string>
+    <string name="tablo_ispaylasimi_aciklama">You can edit repetitive jobs from time to time</string>
+
+    <string name="tablo_yemek">Monthly Meals</string>
+    <string name="tablo_yemek_aciklama">In here, you can create, edit and track monthly meals</string>
+
+    <string name="table_duty_name">Name :</string>
+    <string name="table_duty_interval">Date :</string>
+    <string name="table_duty_dutyname">Duty Name :</string>
+    <string name="dialog_duty_name">Choose the attendant person :</string>
+    <string name="dialog_duty_date">Date (1 to 31)</string>
+    <string name="dialog_duty_dutyname">Duty Name</string>
+
+    <string name="HttpConnectionTimeOut">4500</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_expense">HomeSweetHome - Expenses</string>
+    <string name="title_activity_notepad">HomeSweetHome - Notes</string>
+    <string name="title_activity_login">HomeSweetHome - Login</string>
+    <string name="title_activity_signup">HomeSweetHome - Signup</string>
+    <string name="title_activity_menu">HomeSweetHome - Meals</string>
+    <string name="title_activity_meals">HomeSweetHome - Add Meal</string>
+    <string name="title_activity_shopping">HomeSweetHome - Shopping List</string>
+    <string name="title_activity_duty">HomeSweetHome - Chores</string>
+
+
+    <string name="checkPass">net.ddns.morigg.homesweethomeapp.checkPass</string>
+    <string name="textUser">net.ddns.morigg.homesweethomeapp.textUser</string>
+    <string name="textPass">net.ddns.morigg.homesweethomeapp.textPass</string>
+
+
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!-- NavigationDrawer İçerikleri -->
+    <string name="Navigation_MainPage">Main Page</string>
+    <string name="Navigation_Home">Home</string>
+    <string name="Navigation_Debt">Debts</string>
+    <string name="Navigation_InviteHome">Invite Home</string>
+    <string name="Navigation_JoinHome">Join Home</string>
+    <string name="Navigation_Resign">Quit Home</string>
+    <string name="Navigation_ResignTitle">Are you sure to quit home?</string>
+    <string name="Navigation_ResignApply">Quit</string>
+    <string name="Navigation_Disband">Disband Home</string>
+    <string name="Navigation_Kick">Kick from home</string>
+    <string name="Navigation_Apply">Applies</string>
+    <string name="Navigation_Create">Create Home</string>
+    <string name="Navigation_HomeApplies">Applies</string>
+    <string name="Navigation_AcceptInvite">Accept Invite</string>
+    <string name="Navigation_InviteHomeHint">Name of the person to be invited</string>
+    <string name="Navigation_InviteHomeAction">Invite Home</string>
+    <string name="Navigation_JoinHomeHint">Please enter the name of the house you want to join</string>
+    <string name="Navigation_JoinHomeAction">Join</string>
+    <string name="Navigation_CreateHint">Please enter the name of the house you want to create</string>
+    <string name="Navigation_CreateHomeAction">Create</string>
+    <string name="Navigation_DebtToOne">DEBT : </string>
+    <string name="Navigation_Asset">ASSETS : </string>
+
+    <string name="Navigation_CreateErrorTitle">Error on creating home</string>
+    <string name="Navigation_CreateErrorContent">Error on creating home. Name has been already taken.</string>
+    <string name="Navigation_CreateSuccessfulHint">Home create successfully</string>
+    <string name="Navigation_JoinSuccessfulHint">You joined a home</string>
+    <string name="Navigation_CreateSuccessfulContent">Returns to the login screen</string>
+    <string name="Navigation_CreateSuccessfulOkey">Confirm</string>
+    <string name="Navigation_JoinHomeAcceptTitle">You joined a home</string>
+    <string name="Navigation_JoinHomeAcceptContent">Application will be restart</string>
+    <string name="Navigation_JoinHomeRequestTitle">Join home request successfully sent</string>
+    <string name="Navigation_JoinHomeRequestContent">When the administrator of home accept the apply, you will join the home</string>
+    <string name="Navigation_ResignHomeRequestTitle">Are you sure to quit home?</string>
+    <string name="Navigation_ResignHomeRequestNewAdmin">Select a new home administrator</string>
+    <string name="Navigation_FullSync">Synchronize</string>
+
+
+    <string name="NotJoinedHomeTitle">You are not member of a home</string>
+    <string name="NotJoinedHomeHint">While you dont have a home, you can not available to use this application. Please join to a home</string>
+
+
+    <string name="Notepad_EditTextTitle">Title</string>
+    <string name="Notepad_EditTextContent">Content</string>
+    <string name="Notepad_Delete_Okay">Delete</string>
+    <string name="Notepad_Delete_Cancel">Cancel</string>
+    <string name="Notepad_Delete_Title">Are you sure to delete this note?</string>
+    <string name="Notepad_Add_Hint">Add Note</string>
+    <string name="Notepad_Delete_Hint">Delete Note</string>
+    <string name="Notepad_Edit_Hint">Edit Note</string>
+    <string name="Notepad_UpdatedNotif">Notes Updated</string>
+
+    <string name="ShoppingList_Hint">Shopping List</string>
+    <string name="ShoppingList_ItemAdd">Add Item</string>
+    <string name="ShoppingMenu_Save">Save</string>
+    <string name="ShoppingMenu_RemovePurchased">Clear those taken</string>
+    <string name="ShoppingMenu_Actions">Actions :</string>
+    <string name="ShoppingMenu_Notifications">Send notifications to homemates</string>
+    <string name="ShoppingList_SyncTitle">Are you sure to save changes?</string>
+    <string name="ShoppingList_NewListTitle">One of homemates update the list</string>
+    <string name="ShoppingList_NewListHint">Do you want to get updated list?</string>
+    <string name="ShoppingList_UpdatedNotif">Shopping list updated</string>
+
+    <string name="Expense_EditTextTitle">Title :</string>
+    <string name="Expense_DateHint">Date :</string>
+    <string name="Expense_EditTextContent">Content</string>
+    <string name="Expense_Author">Payer :</string>
+    <string name="Expense_EditTextType">Type :</string>
+    <string name="Expense_EditTextCost">Cost :</string>
+    <string name="Expense_CostError">You entered an incorrect value</string>
+    <string name="type_to_search">Search</string>
+    <string name="Expense_participants">Participans</string>
+    <string name="Expense_UpdateNotif">Expenses updated</string>
+    <string name="Expense_AddHint">Add Expense</string>
+    <string name="Expense_EditHint">Edit an Expense</string>
+    <string name="Expense_ShowOnly">Show an Expense</string>
+    <string name="Expense_ImageToText">Image converting.\n\n Please wait</string>
+    <string name="Expense_DeleteTitle">Are you sure to delete this expense?</string>
+    <string name="Expense_DialogAdd">Add</string>
+    <string name="Expense_DialogCancel">Cancel</string>
+
+    <string name="Menu_MealAdd">Add Meal</string>
+    <string name="Menu_MealEdit">Edit Meal</string>
+    <string name="Menu_MealNameEmptyTitle">Meal name can not be empty</string>
+    <string name="Menu_MealIngredientsEmptyTitle">Plase add ingredients</string>
+    <string name="Menu_MenuAdd">Menu Add</string>
+    <string name="Menu_MenuEdit">Menu Edit</string>
+    <string name="Menu_SelectItems">Select the meals</string>
+    <string name="Menu_UpdateNotif">Menu updated</string>
+    <string name="Menu_MealNotFound">Meal Not Found</string>
+
+
+    <string name="Seperator">,,;.:;,:,;.;.,</string>
+    <string name="firstlogin_logname">firstlogin</string>
+
+
+    <string-array name="expense_actions">
+        <item>Rent</item>
+        <item>Bill</item>
+        <item>Shopping</item>
+        <item>Borrow Money</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string name="loading_message">Please wait, photo uploading to server</string>
+
+    <string name="dialog_select_prompt">Choose a photo</string>
+    <string name="dialog_select_camera">Camera</string>
+    <string name="dialog_select_gallery">Gallery</string>
+
+    <string name="image_picker_error">The photo you selected is not appropriate, please select another photo</string>
+
+    <string name="agreementerror">You must accept the user agreement</string>
+    <string name="agreement">
+        1.1. İşbu Sözleşmenin konusu;
+
+
+
+HomeSweetHome uygulamasında (Kısaca: “Uygulama” olarak anılacaktır) yayınlanan, yer verilen, HomeSweetHome ve HomeSweetHome Kullanıcı hesap Bilgileri kullanılarak erişim sağlanan HomeSweetHome ait olan veya sadece uygulama’de erişim olanağı sunulan her nevi oyun ve dijital içerik veya veri ile uygulama’de sunulan veya satışa konu edilen her nevi ürün ve/veya hizmetin (Kısaca: “İçerik” olarak anılacaktır) tabi olduğu kullanım koşulları ile Kullanıcı ile uygulamanin yayıncısı olan HomeSweetHome Interactive Services Ltd. (Kısaca “HomeSweetHome” olarak anılacaktır) arasında uygulamanin kullanılmasının veya buradaki içeriklerden doğrudan veya dolaylı herhangi bir şekilde yararlanılmasının tabi olduğu sözleşmesel kullanım şartlarının belirlenmesi ve düzenlenmesidir.
+
+
+
+HomeSweetHome uygulamasi sadece eğlence amacıyla kullanılabilir. uygulamanin ticari amaçlarla, gelir elde etmek maksadıyla veya diğer benzer bir hedefe matuf şekilde kullanımı mümkün değildir. Kullanıcı HomeSweetHome hizmet ve içeriklerini sadece ticari olmayan şekilde ve kişisel kullanımın için kullanabileceğini kabul eder.
+
+
+
+1.2. HomeSweetHome, bu Sözleşmenin içerdiği şartları uygulamanin içeriğindeki değişiklikler, sunulan ürün veya hizmetlerde oluşan güncelleme, yeni ürün veya hizmet sunumu yahut buna benzer sebeplerle kısmen veya tamamen güncelleme yahut değiştirme hak ve yetkisini haiz olup bu gibi hallerde Sözleşme uygulama üzerinden Kullanıcıya güncel haliyle ve bilgilendirme yapılarak sunulacaktır.
+
+
+
+1.3. Kullanıcı, HomeSweetHome’in bu bende konu şekilde yaptığı değişiklikleri veya güncellemeleri; HomeSweetHome tarafından kendisine doğrudan bilgilendirmede bulunulmuş olması veya değişikliklerin yahut güncellemelerin vukuundan sonraki bir tarihte uygulamaye erişim sağlaması veya buradaki herhangi bir içerikten doğrudan veya dolaylı şekilde yararlanmış olması halinde haberdar edilmediğini yahut mezkur değişikliklerin kendisine tatbikinin mümkün olmadığını / olmayacağını iddia, talep veya beyan edemez.
+
+
+
+
+
+2. SÖZLEŞMENİN TARAFLARI
+
+
+
+2.1. İşbu Kullanıcı Sözleşmesinin tarafları HomeSweetHome ve “Kullanıcı”dır.
+
+2.2. Bu sözleşmede Kullanıcı ve HomeSweetHome ayrı ayrı olarak ve tek başına “Kullanıcı” ve “HomeSweetHome” şeklinde; birlikte ise “Taraflar” olarak anılır ve adlandırılır.
+
+
+
+2.3. “Kullanıcı”: HomeSweetHome uygulamasine üye olarak veya üye olmaksızın erişim sağlayarak, HomeSweetHome uygulamasinde sunulan herhangi bir ürün ve/veya hizmeti kısmen veya tamamen, geçici veya süreklilik arz eden bir şekilde; kendi adına ve hesabına yahut başka kişi veya kurumların nam ve/veya hesabına her ne suretle olursa olsun edinen veya yararlanan tüm gerçek veya tüzel kişileri ifade etmek amacıyla kullanılır. Kullanıcı sıfat, hak ve yükümlülükleri, yetkisiz erişim hali ayrık ve yukarıda tanzim edilen şartlara tabi olmak üzere değerlendirilir.
+
+
+
+2.4. Kullanıcının, HomeSweetHome uygulamasindeki Kullanıcı hesabının erişim bilgilerini veya diğer yetkilerini her ne suretle olursa olsun üçüncü bir kişiye geçici veya kalıcı bir şekilde kullandırma hakkı bulunmamaktadır. Buna aykırı kullanımların söz konusu olması halinde kendisine Kullanıcı hesabı kullandırılan kişi veya kişiler HomeSweetHome tarafından tespit edilebilir ve bu durumda ilgili hesap kalıcı veya sürekli şekilde askıya alınarak kullanım sonlandırılabilir.
+
+
+
+2.5. Kullanıcı dışındaki diğer kişilere hesap kullandırma eylemlerinin sonuçlarından hesap sahibi tek başına sorumludur. Böyle bir durumda başkasının Kullanıcı hesabını her ne suretle olursa olsun kısmen veya tamamen, geçici veya devamlı suretle kullanma eyleminde bulunan kişiler buna istinaden HomeSweetHome’e karşı herhangi bir hak veya talep ileri süremez.
+
+
+
+2.6. Yetkisiz erişim ve kullanımlar hukuka aykırı addedildikleri ölçüde yetkili resmi merciler nezdinde yasal yaptırımlara tabi tutulabilir.
+
+
+
+2.7. Kullanıcı bir üste bende konu mezkur yasal yaptırım riskini bildiğini ve sonuçlarını hesabını kullandırdığı kişiler ile birlikte veya münferiden üstelendiğini kabul ve taahhüt eder. Kullanıcı hesaplarını yetkisiz kullanan kişiler, bu sözleşme kapsamında hesap sahipleri ile birlikte veya münferiden HomeSweetHome’e karşı sorumludur fakat bu kimselerin bu sözleşmenin tarafı olduklarını iddia veya talep etmeleri mümkün değildir.
+
+
+
+2.8. Yetkisiz erişim ve yetkisiz şekilde başkasına ait hesap kullanımı, kullanımı gerçekleştirene bu sözleşme anlamında “Kullanıcı”ya tanınan hakları ve sıfatı sağlamaz. Aksine mezkur eylemleri icra edenler, HomeSweetHome’e karşı bu sözleşmenin Kullanıcıya yüklediği yükümlülüklere tabi tutulacaklarını Kullanıcı ile birlikte kabul ve taahhüt etmiş addedilir.
+
+
+
+2.9. İşbu Sözleşme tarafların arasında hiçbir suretle herhangi bir işbirliği ilişkisi,  herhangi bir ortaklık ilişkisi veya başka her ne ad altında olursa olsun HomeSweetHome’den Kullanıcıya herhangi bir hak devri sonucu doğuran hukuki muamele olarak vasıflandırılamaz.
+
+
+
+3. SÖZLEŞMENİN KURULMASI VE YÜRÜRLÜĞÜ
+
+
+
+3.1. İşbu Sözleşme, Kullanıcının, HomeSweetHome uygulamasine üye olarak veya üye olmaksızın, uygulamade veya uygulama üzerinden erişim sağladığı herhangi bir HomeSweetHome yayınına konu içeriğe hesap bilgisi oluşturarak veya oluşturmaksızın, işlem, ziyaret, üyelik vb. sürelerine bakılmaksızın erişim sağladığı andan itibaren hukuken Tarafları bağlayıcı şekilde kurulmuş ve bu andan itibaren işbu Kullanıcı tarafından okunmuş, anlamış ve onaylamış addedilderek yürürlük kazanmış olur.
+
+
+
+3.2. İşbu sözleşme 3.1. hükmünde tanzim edilen şekilde ve anda kurulduktan sonra Kullanıcının uygulamaye erişim sağladığı zaman aralıkları ve süreleri dikkate alınmaksızın, uygulamaye erişim sağlanarak Kullanıcının uygulama içeriklerinden her ne şekilde olursa olsun istifade ettiği süre boyunca hukuken bağlayıcı şekilde yürürlükte kalır.
+
+
+
+3.3. Kullanıcı bu Sözleşmenin yürürlüğünü sona erdirmek istemesi halinde bu durumu tarih belirterek ve varsa Kullanıcı hesabını kapattıktan sonra durumu HomeSweetHome’e yazılı şekilde bildirerek ve bu andan itibaren uygulamaye hiçbir suretle erişim sağlamamak şartıyla talep edebilir. HomeSweetHome, Kullanıcının, bu Sözleşme koşullarından herhangi birine kısmen veya tamamen aykırı şekilde bir eylem veya işleminin tespiti halinde Kullanıcının hesap veya hesaplarını geçici veya kalıcı süreyle askıya alabileceği gibi Sözleşmeyi, hiçbir ödeme mükellefiyeti oluşmaksızın derhal ve bildirimsiz şekilde sonlandırabilir.
+
+
+
+3.4. HomeSweetHome, işbu sözleşmede, HomeSweetHome uygulamasinde kullanılan teknolojiler, sunulacak olan yenilik ve iyileştirmeler, sunulacak olan yeni ürün ve içerikler, mevzuat değişikliklerinin zorunlu kıldığı yükümlülükler, güncellemeler, mevcut ürün, hizmet ve içeriklerde yapılacak kısmi ve bütünsel değişiklikler gibi sebeplerle oluşabilecek olan ihtiyaçların sonucunda ve dönemsel yahut periyodik olma zorunluluğu bulunmaksızın, zaman ve kısım sınırlandırması bulunmaksızın, kısmi veya bütünsel değişiklikler, tadiller, ekler, güncellemeler yapma hak ve yetkisini tek başına haizdir.
+
+
+
+4. MÜLKİYET
+
+
+
+4.1. www.HomeSweetHome.com ve bu uygulamaden sunulan her nevi hizmet ve içerik bizat ve tek başına HomeSweetHome Interactive Services Ltd.’ye aittir.
+
+
+
+4.2. HomeSweetHome uygulamasinden Kullanıcı tarafından HomeSweetHome tarafından belirlenen ilke  ve kurallara uygun şekilde edinimi gerçekleştirilen hiçbir içerik Kullanıcıya bunların üzerinde mülkiyet hakkı vermez.  Kullanıcının uygulama üzerinden erişim veya edinim sağladığı, yahut kullandığı her nevi içerik HomeSweetHome’in münhasır mülkiyetindedir. Bu bende konu her nevi içeriğin kullanım süreleri, geçerlilik süreleri ve kullanımının sonlandırılmasına ilişkin karar verme hak ve yetkisiz münhasıran HomeSweetHome’e aittir.
+
+
+
+4.3. Kullanıcı, HomeSweetHome üzerinden edinimini gerçekleştirdiği her nevi içerik, ürün veya hizmetin usulüne uygun edinilmiş olmak şartıyla kendisine sadece ilgili edinime konu unsuru kullanma hak ve yetkisini tanıyacağını bilir, kabul ve taahhüt eder.
+
+
+
+4.4. Kullanıcının, HomeSweetHome uygulamasinden edindiği ürün, hizmet veya içeriklerin tamamı ilgili varlığın özelliklerine, tabi olduğu kullanım şartlarına, HomeSweetHome tarafından belirlenecek olan ilkelere ve yasal düzenlemelere uygun şekilde kullanılmak zorundadır. Buna aykırı kullanımların HomeSweetHome tarafından tespit edilmesi, sonlandırılması, aykırı kullanımı gerçekleştirenlerin haklarında yasal düzenlemelerin gerektirdiği ölçü ve usullere tabi işlemlerin yapılması mümkündür.
+
+
+
+4.5. Kullanıcının, HomeSweetHome uygulamasinden edindiği her nevi içeriğin kullanım hakkı, ilgili içeriğin kullanım şartlarına tabi şekilde münhasıran edinimi gerçekleştiren Kullanıcıya aittir. Kullanıcının bu bende konu şekilde edindiği içerikleri ticarete konu etmesi, gelir elde etme amacıyla kullanması, üçüncü kişilere kullandırması hallerinde HomeSweetHome’e karşı ilgili içerikten ötürü herhangi bir talepte bulunması mümkün değildir.
+
+
+
+4.6. Kullanıcı, HomeSweetHome uygulamasinden edindiği her nevi içerikten sadece ilgili içeriğin sunulma ve edinilme amacıyla istifade eder. Kullanıcının, bu bende konu şekilde edindiği içerikleri işlemesi, değiştirmesi, ayrıştırması, çoğaltması, kopylaması ve benzeri şekillerde edinim amacı dışında istifade maksadına yönelik işlemlere tabi tutması bu Sözleşme’ye aykırılık olarak kabul edilir. Kullanıcı, mezkur eylemlerde bulunması halinde bu eylemlerin hukuka aykırı olarak değerlendirileceği ve ilgililer hakkında yasal inceleme, takip, soruşturma ve diğer işlem süreçlerinin tatbik edilebileceğini bilir ve kabul eder.
+
+
+
+5. ERİŞİM SAĞLANAN DİĞER İÇERİKLERİN MÜLKİYETİ
+
+
+
+5.1. HomeSweetHome uygulamasinden üçüncü kişi veya kurumlara ait reklamlar dahil her nevi dijital ortam, web uygulamasi, ürün veya içeriklere erişim sağlanması mümkün olabilir. Kullanıcı ise bu bende konu şekilde uygulama’den kendisine veya üçüncü kişilere ait içeriklere harici veya dahili şekilde erişim sağlanmasına yahut bunların uygulama üzerinden veya Kullanıcı hesaplarından yayınlanmasına yönelik eylem veya işlemlerde bulunamayacağını kabul ve taahhüt eder.
+
+
+
+5.2. HomeSweetHome uygulamasinden hangi tür üçüncü kişi içeriğine erişim sağlanabileceğini süre ve konu sınırlaması olmaksızın HomeSweetHome tek başına belirleme hak ve yetkisini haizdir.
+
+
+
+5.3. HomeSweetHome uygulamasinden erişim sağlanan reklamlar dahil üçüncü kişi içeriklerinin uygulama içinden veya uygulama dışından erişime, yönlendirmeye veya başka usullere tabi şekilde erişilebilir kılınması gibi tüm yöntem ve usuller bu bent kapsamında değerlendirilerek bu hususların tümüne dair tasarrufta bulunma yetkisi tek başına HomeSweetHome’e aitttir. Ancak reklamlar dahil her nevi üçüncü kişi içeriğinden kaynaklanan sorumluluk, bunların tabi oldukları kullanım koşulları ve kullanım yahut erişimin yol açtığı her nevi sonuç sadece sahiplerinin sorumluluğundadır.
+
+
+
+5.4. HomeSweetHome uygulamasinden reklamlar vasıtasıyla olanlar dahil olmak üzere, erişim olanağı tanınan üçüncü kişi veya kurumlara ait içerik ve diğer fikri yahut öteki mülkiyet hakkına konu unsurların, içeriklerın veya yayınların kullanımından kaynaklanan mükellefiyet ve mülkiyet sahiplerine aittir.
+
+
+
+5.5. HomeSweetHome uygulamasinden erişim sağlanan reklamlar dahil olmak üzere üçüncü kişilere ait içeriklere erişim sağlamak veya bunu kullanmamak Kullanıcının tasarrufuna tabidir. Bu nevi erişim sağlanan üçüncü kişiye ait içeriklerin tabi olduğu kullanım koşulları sahiplerince belirlenir. HomeSweetHome, uygulamasinden erişim sağlanan reklamlar dahil üçüncü kişilere ait içeriklerin tabi olduğu kullanım koşullarına dair tasarruf ehliyetini haiz olmadığı gibi bu koşullara ilişkin veya bunlardan kaynaklanan hiçbir talep veya uyuşmazlık HomeSweetHome’e karşı ileri sürülemez.
+
+
+
+6. ÜÇÜNCÜ KİŞİLERİN SORUMLULUĞU
+
+
+
+6.1. HomeSweetHome uygulamasi üzerinden, Kullanıcı tarafından her ne suretle olursa olsun erişim sağlanan reklamlar dahil üçüncü kişi veya kurumlara ait olan bu bende konu içerik ve yayınlardan ötürü; HomeSweetHome’e karşı Kullanıcı tarafından doğrudan, dolaylı, tek başına ve hak sahipleri ile birlikte herhangi bir şekilde talep veya dava yöneltilemez, sorumluluk tevcih edilemez. Kullanıcı, HomeSweetHome portalından her ne suretle olursa olsun erişim sağladığı reklamlar dahil ve fakat bununla sınırlı olmaksızın 3. kişi veya kurumlara ait içerik ve yayınlardan kaynaklanan hiçbir hukuki sorumluluğunun HomeSweetHome’e ait olmadığını bildiğini kabul ve taahhüt eder.
+
+
+
+6.2. Kullanıcı, HomeSweetHome uygulamasinden sunulan ve fikri mülkiyet, marka, tasarım ve diğer yasal düzenlemelerince korunan ve genel olarak telif hakları HomeSweetHome’e ait olan hizmet, oyun, içerik ve diğer servislerden herhangi bir surette istifade ettiklerinde bu Kullanıcı Sözleşmesini kabul etmiş; burada yer alan yükümlülükleri hakkında bilgilendirilmiş ve bunlara uymayı taahhüt etmiş sayılacaklardır.
+
+
+
+6.3. Bu Sözleşmeye konu hükümleri veya uygulama’yi yahut uygulama içeriklerinin kullanım usullerini kabul etmeme iradesini haiz olan Kullanıcının, HomeSweetHome uygulamasinden ayrılması ve bu uygulamade sunulan hizmetlerden veya ürünlerden istifade etmemesi ve bu yönde bir girişim yahut talepte bulunmaması gerekmektedir. Aksi durum Kullanıcının bu Sözleşmeye konu hükümleri kabul iradesini HomeSweetHome’e iletmiş olduğu şeklinde kabul ve tatbik olunur.
+
+
+
+6.4. HomeSweetHome uygulamasinin ilgili kısım ve bölümlerinden kullanıcının içerik oluşturup yayınlayabildiği forum, profil, blog, haber veyan benzer içeirk girişlerinin yapılmasından münhasıran ilgili içeriği oluşturan ve yayınlayan kişi veya kişiler tek başlarına ve tamamından sorumlu olup bu nevi içeriklerden ötürü HomeSweetHome’e sorumluluk tevcih edilemez.
+
+
+
+7. FİKRİ HAKLAR
+
+
+
+7.1. HomeSweetHome tarafından uygulama içeriklerinin Kullanıcılara arzında kullanılan markalar ve diğer işaretler yetkili bölgesel veya uluslararası resmi makamlar nezdinde tescil edilerek veya ayırt edici karakterleri ile kullanılmak suretiyle yahut kullanımla ayırt edicilik kazanmış şekilde HomeSweetHome’in münhasır mülkiyetindedir.
+
+
+
+7.2. İşbu Sözleşme Kullanıcı’ya ve/veya diğer üçüncü kişilere HomeSweetHome’in münhasır mülkiyetinde olan 7.1. bendinde mezkur unsur ve işaretler üzerinde herhangi bir kısmi veya bütünsel hak sahipliği kazandırmaz, anılan hakların üzerinde sadece ilgili içerikle ilgili sınırlı kullanım hakkı tanır.
+
+
+
+7.3. Kullanıcı, HomeSweetHome uygulamasinden sunulan her nevi oyun, içerik, materyal, doküman, bilgi, grafik, tasarım, ürün, oyun içi hesaplar, oyun içi ürünler, e-mail hizmetleri, yazılım, güncelleme ve diğer benzer servislerin; Fikri ve Sınai Mülkiyet Hukuku, Marka Hukuku, Patent Hukuku ve diğer ilgili yasalar ile korunmakta olduğunu ve bu bentte sayılan maddi ve gayrı maddi her nevi unsurların, varlıkların ve/veya sujelerin tamamının, bu Sözleşmede sayılan istisnalar hariç olmak üzere, bizatihi ve münhasıran HomeSweetHome’in mülkiyetinde olduğu hakkında bilgilendirilmiş olarak buna aykırı eylem ve işlemlerde bulunmayacağını kabul eder.
+
+
+
+7.4. HomeSweetHome 7.1, 7.2, 7.3 bentlerinde sayılı tüm varlıkların üzerinde her nevi tek taraflı tasarruf hakkını haizdir.
+
+
+
+7.5. HomeSweetHome’in oyun hizmetleri kapsamında sunduğu tüm hizmetleri kısmen veya tamamen geçici veya kalıcı bir şekilde durdurma, değiştirme veya sürdürmeme hakkı bulunmaktadır. Kullanıcı, HomeSweetHome’in bu bende konu şekilde uygulama içerik ve hizmetlerinin sunumunu geçici veya kalıcı şekilde durdurması veya sonlandırması hallerine istinaden HomeSweetHome’e karşı herhangi bir hakkının veya talepte bulunma yetkisinin bulunmadığını kabul eder.
+
+
+
+7.6. HomeSweetHome bu uygulamade sunulan hizmet veya içeriklerin sabit veya kesintisizliğini taahhüt etmemektedir. Bu durum HomeSweetHome’in içerik veya hizmetlere dair işaretlerin veya markaların üzerindeki hak sahipliğini kısmen veya tamamen ortadan kaldıran bir husus olarak değerlendirilemez.
+
+
+
+7.7. HomeSweetHome uygulamasindeki veya uygulama üzerinden erişim sağlanan her nevi oyun, yayın, içerik ve diğer unsurların bir kısmında veya tamamında geçici veya sürekli değişikliklerin yapılması durumunda Kullanıcıların HomeSweetHome’e karşı herhangi bir talep ve/veya her ne ad altında olursa bir tazminat talep hakkı bulunmayacaktır.
+
+
+
+7.8. Kullanıcı, bu maddede sayılan varlıkların ve bunlara ilişkin tasarrufta bulunma hak ve ehliyetinin tamamının HomeSweetHome’in tek başına mülkiyetinde olduğunu bilir ve kabul eder.
+
+
+
+7.9. HomeSweetHome tarafından sunulan oyun ve/veya bunlarla doğrudan veya dolaylı bağlantılı diğer her nevi servis hizmetlerini kullanan, bunlardan istifade eden veya bunlara erişmeye çalışanlar kişisel her nevi girişim ve sorumluluklarının işbu bildirim ile farkında sayılacaklardır.
+
+
+
+7.10 Kullanıcı, Sözleşmenin yanı sıra bu Sözleşmenin ayrılmaz parçası olan HomeSweetHome Gizlilik İlkelerini de kabul ettiklerini beyan eder. Böylece, Kullanıcı HomeSweetHome içerik veya hizmetlerinden istifade ettikleri sırada ilgili yasalara uymayı taahhüt eder; bu noktada yasalara aykırı tüm eylem ve işlemlerinden sadece kendilerinin sorumlu olacağını taahhüt eder; anılan sebeplerle hiçbir surette HomeSweetHome’a rücu etme haklarının veya husumet tevcih etmelerinin bulunmayacağını kabul ederler.
+
+
+
+7. 11. Kullanıcı, HomeSweetHome hizmet ve içeriklerini ihlal etmemeyi, boşluklardan yararlanmamayı, tersine mühendislik yapmamayı, kaynak koda çevirmemeyi, tersine çevirmemeyi ya da sair bir biçimde tahrif etmemeyi ya da bu konularda bir başkasını teşvik ve başkalarına yardım etmemeyi kabul eder.
+
+
+
+8. ERİŞİM VE SINIRLANDIRILMASI
+
+
+
+8.1. HomeSweetHome uygulamasinin hizmet veya içeriklerinin Kullanıcı tarafından işbu Sözleşme şartlarına aykırı kullanılması halinde HomeSweetHome Kullanıcı’nın uygulama hizmet ve içeriklerine erişimini web uygulamasi üzerinden geçici veya kalıcı olarak sonlandırma hakkını haizdir.
+
+
+
+8.2. HomeSweetHome’in 8.1’deki şekilde bir tasarrufta bulunması halinde Kullanıcının bu işleme mukabil herhangi bir itiraz hakkı bulunmamaktadır. Böyle bir durumda HomeSweetHome üzerinden sunulan her nevi hizmet sırasında Kullanıcının zilyetliğine giren lisanslar dahil her nevi materyalin Kullanıcı tarafından imha edilmesi yükümlülüğü Kullanıcıya aittir.
+
+
+
+8.3. Kullanıcı, HomeSweetHome hizmetlerinden yararlanmaları amacıyla kendilerine verilen şifreleri, Kullanıcı isimlerini veya herhangi bir başka hakkı diğer kişilere devredemez; kullandıramaz, bunları ivazlı veya ivazsız ticarete konu edemez; aksi yöndeki eylem ve/veya işlemlerinin sonuçları ile ilgili olarak HomeSweetHome aleyhine veya HomeSweetHome’e karşı herhangi bir talepte bulunamaz. Aksi durumun tespiti halinde HomeSweetHome 8.1 maddesindeki şekilde işlem yapabilir.
+
+
+
+8.4. Kullanıcı, HomeSweetHome uygulamasinde sunulan içeriklere erişim sağlamak amacıyla kullandıkları hesap bilgilerinin ve hesaplar dahilinde oluşturulan sanal eşyanın, hesap bakiyesinin, hesap karakterinin ve diğer hesap özelliklerinin ticari yahut maddi bir değerinin bulunmadığını bilir ve kabul ederler. Bu bentte sayılan tüm varlıklar Kullanıcı’ya uygulamanin amacı olan eğlence maksadıyla sunulur. Ticari kullanım gayesi içermez. Bahis, kumar vb yasa dışı amaçlarla kullanılamaz.
+
+
+
+8.5. Kullanıcı, HomeSweetHome uygulamasinde sunulan içeriklerin ve özellikle oyunların ve bunlarla bağlantılı her nevi hizmetlerin sonucu talih veya tesadüfe bağlı bir nitelik taşımadığını bilir ve kabul eder.
+
+
+
+8.6. Kullanıcı, HomeSweetHome uygulamasinde sunulan hizmet ve içeriklerin her birini tabi olduğu kullanım şart ve koşullarına uygun şekilde edineceğini taahhüt eder. Buna aykırı her nevi üçüncü taraf araç, program, yazılım veya unsurlarını kullanmamayı, uygulama İçeriğine ilişkin “hack”, “hile”, “bot”, “hile dosyası”, “mod” ve veya otomasyon programları dahil, ancak bunlarla sınırlı olmaksızın, İçerikle veya İçeriğin yazılım unsurlarından herhangi bir kısmıyla veya tamamıyla herhangi bir şekilde etkileşime giren yetkisiz üçüncü taraf programlarının veya yazılım ve HomeSweetHome’in arasındaki herhangi bir iletişimi engelleyen, taklit eden veya yönünü değiştiren veya İçerik hakkındaki bilgileri kaydetmek için İçerik tarafından kullanılan bellek alanlarını okuyarak İçerik hakkında bilgi toplayan üçüncü taraf programlarını kullanmayacağını; aksi durumda HomeSweetHome tarafından 8.1. bendindeki yaptırımlara tabi tutulabileceğini ve söz konusu eylem hukuka aykırı olduğu için hakkında yasal işlem başlatılabileceğini bildiğini kabul eder.
+
+
+
+8.7. HomeSweetHome uygulamasi üzerinden oynanan veya indirilen her nevi uygulama, içerik veya kod yahut diğer unsur veya veriler Fikri ve Sınai Mülkiyet Hukuku ve ilgili yasalar ile uluslar arası sözleşmeler kapsamında ve burada anılan kullanım koşullarına tabi olarak kullanılacaktır. Buna aykırı her nevi kullanımın, sayılan düzenlemeler kapsamında cezai ve hukuki takibata konu edilebileceğini Kullanıcı bilir ve kabul eder.
+
+8.8. HomeSweetHome, sahibi tarafından 6 aylık süre zarfında aralıksız şekilde erişim sağlanmayan, bu sebeple pasif konumda bulunan kullanıcı hesaplarını geçici veya kalıcı şekilde askıya alma ve/veya kalıcı şekilde kapatma hak ve yetkisini haizdir.
+
+
+
+9. KULLANICI BAĞLANTI VE DONANIMI
+
+
+
+9.1. HomeSweetHome uygulamasi tarafından sunulan içerik veya hizmetlerden istifade edilmesi amacıyla Kullanıcı ve üyelerin gerekli bağlantı alt yapı ve diğer donanıma sahip olması gerekir.
+
+
+
+9.2. Erişim ve bağlantı için gerekli donanım ve bağlantı alt yapısına sahip olunması ve buna ilişkin gerekliliklerin temini Kullanıcının yükümlülüğündedir.
+
+
+
+Bu hususta HomeSweetHome’in herhangi bir sorumluluğu bulunmamaktadır.
+
+
+
+9.3. Internet bağlantısı ile ilgili olarak servis sağlayıcılardan, altyapıdan veya Kullanıcıdan kaynaklanan her nevi aksaklık sadece Kullanıcı’nın sorumluluğundadır.
+
+
+
+9.4. HomeSweetHome tarafından sunulan hizmetlerden yararlanılması halinde, hizmetten yararlanma zamanı ve sıklığı HomeSweetHome tarafından mevcut Kullanıcı sayısı, süresi ve diğer verilere göre tayin edilecektir.
+
+
+
+9.5. Kullanıcının, HomeSweetHome hizmet ve içeriklerinden yararlanırken kullandığı hesaplarının güvenliğinin temini için HomeSweetHome tarafından mümkün olan en yüksek teknolojik tedbirlerden istifade edilecektir.
+
+
+
+9.6. Kullanıcı, hesaplarının güvenliğini sağlama mükellefiyetlerinden ilk derecede ve doğrudan sorumlu olduğunu; aksi şekilde ortaya çıkan hesap güvenliği problemlerinde HomeSweetHome’e karşı herhangi bir talep hakkı bulunmayacağını kabulü ve taahhüt eder.
+
+
+
+9.7. HomeSweetHome içerik ve servislerinin kullanımı, bunlar için gerekli ve uyumlu cihazları, internet erişimini ve ücretli olabilecek belli yazılımları gerekli kılabileceği gibi bu sayılanların belirli aralıklarla güncellenmesini ve/veya güncelleme durumunda sayılanların performansını etkileyebilir. Bu gibi sebep ve haller HomeSweetHome’e karşı herhangi bir talepte bulunulması maksadıyla dayanak olarak değerlendirilemez.
+
+
+
+10. SORUMSUZLUK
+
+
+
+10.1. HomeSweetHome oyunlarının ve bunlarla bağlantılı hizmetlerin sunulması sırasında ortaya çıkabilecek teknik sebeplerin etkisi ile oyun hesaplarının ve/veya bu hesaplardaki herhangi bir unsurun geçici veya kalıcı şekilde kaybolması yahut kullanılmaz duruma gelmesi halinde söz konusu durum ve sonuçtan HomeSweetHome sorumlu tutulamaz.
+
+
+
+10.2. HomeSweetHome tarafından sunulan içerik veya hizmetlerden istifade edildiği sırada; reklam, haksız rekabet, terör, cumhuriyet, devlet, din, ırkçılık, uyuşturucu, politikacılar ya da diğer tüzel hakkında yazışmalar, pornografik içerik, argo kelimelerin kullanımı veya diğer oyuncuları tacize yönelik davranışlar içeren yahut Atatürk’ün manevi hatırasına hakaret teşkil eden kullanımlar yasak ve işbu sözleşme kurallarına aykırıdır. Kullanıcı, HomeSweetHome hizmet ve içeirklerini; hukuka aykırı, rahatsız edici, tehditkar, zararlı, haksız fiil anlamına gelen, hakaret edici, iftira edici, suistimal edici, şiddet içeren, müstehcen, kaba, başkalarının özel hayatına müdahale eden, nefret içerikli, ırksal ya da etnik kimlikleri küçük düşürücü ya da diğer biçimlerde sakıncalı içeriklerin aktarılması, yüklenmesi, postalanması, e-posta ile gönderilmesi, iletilmesi, depolanması ya da başka biçimde erişime sunulması amaç ve şekillerinde kullanmamayı kabul ve taahhüt eder.
+
+
+
+10.3. Kullanıcının 10.2 bendine aykırı kullanım durumlarında Kullanıcı HomeSweetHome tarafından geçici veya kalıcı bir süre ile ilgili hizmet veya içeriklere erişimden mahrum bırakılabilir ve varsa bu neviden Kullanıcının yarattığı ilgili içerikleri HomeSweetHome tarafından talep halinde resmi makam ve merciler ile paylaşılabilir.
+
+
+
+10.4. HomeSweetHome söz konusu yasalara aykırı içeriklerin ilgili hesaplardan veya uygulama içeriklerinden çıkarılması için ancak teknik imkanlarının elverdiği ölçüde sorumlu olup bu yöndeki uygulamalarından dolayı ilgili hesap sahibine karşı sorumsuzdur. Aynı sebeplerle Kullanıcı bilgileri savcılık makamlarına ve emniyet birimlerinde usulüne uygun başvurulara istinaden paylaşılabilir.
+
+
+
+10.5. HomeSweetHome içerik ve hizmetlerini kullanmak için, Kullanıcının bulunduğu ülke veya bölge bazında yürürlükte olan yasalar uyarınca bu hizmet ve içeriklerden yararlanmaktan, tarih bakımından hangi andan itibaren olduğu fark etmeksizin, men edilmiş olmasının sonuçlarından HomeSweetHome sorumlu tutulamaz.
+
+
+
+10.6. HomeSweetHome uygulamasi üzerinden kullanıcıların erişimine sunulan bazı içerik ve oyunlar, bu durum ayrıca belirtilerek, yayın ve lisans hakları HomeSweetHome’e ait olmadan ve sadece uygulama üzerinden erişim olanağı sağlanarak yayınlanabilen içerikler olduklarından, bunlara dair hesap sahipliği, erişim yetkileri, resmi makam ve mercilerin bilgi talepleri ancak ve sadece oyun veya içeriğin yayıncısının sorumluluğunda olup bu hususlardan dolayı HomeSweetHome’in uhdesinde bir bilgi veya veri tutulması söz konusu değildir. Bu bende konu oyun ve içeriklerden dolayı kullanıcılarının HomeSweetHome’e karşı herhangi bir talep hakkı veya buna dayanak ilişikisi bulunmadığı gibi resmi makam ve mercilerin bu içeirk ve oyunlara dair bilgi taleplerinin de HomeSweetHome’e yöneltilmesi veya HomeSweetHome tarafından cevaplandırılması mümkün değildir.
+
+
+
+11. HESAP KULLANIMINDA GİZLİLİK
+
+
+
+11.1. Kullanıcı, HomeSweetHome hizmet ve içeriklerinden yararlanmak amacıyla sahibi olduğu hesaba erişim yetkilerini sağlayan bilgileri herhangi bir üçüncü kiş veya kurumla paylaşmama ve gizli tutma mükellefiyetinin tek başınıza sorumlusu olduğunu kabul eder; herhangi bir güvenlik ihlalini derhal HomeSweetHome’e bildirmeyi taahhüt eder.
+
+
+
+11.2. HomeSweetHome, Kullanıcı hesabının yetkisiz kullanımından doğan zararlardan sorumlu değildir. Kullanıcı hesap erişim bilgilerini özenle kullanıp koruyacağını kabul eder.
+
+
+
+11.3. Kullanıcı HomeSweetHome uygulamasinde hesap açarken, herhangi bir şekilde kayıt yaparken ve içerik ve hizmetleri kullanırken doğru ve eksiksiz bilgi vermeyi; kayıt bilgilerini doğru ve eksiksiz tutmak için bunları güncellemeyi kabul eder.
+
+
+
+11.4. Kullanıcı, HomeSweetHome’in, Kullanıcı hesaplarını işletmek için Kullanıcının kayıt bilgilerini saklayabileceğini ve kullanabileceğini kabul eder. Kullanıcı, kendinizden başka bir kişi için, o kişinin izni olmaksızın, hesap oluşturamayacağını kabul eder, aksi durumun sonuçlarından bizatihi sorumlu tutulacağını taahhüt eder.
+
+
+
+11.5. HomeSweetHome, Kullanıcının bu maddeye konu taahhütlerine aykırı işlem veya eylemlerinin tespiti halinde ilgili hesaba ve Kullanıcıya her nevi yasal teknolojik ve hukuki tedbirleri tatbik etmeye yetkilidir.
+
+
+
+
+
+12. MUVAFAKAT
+
+
+
+12.1. HomeSweetHome uygulamasi ve bu uygulama tarafından sunulan hizmet ve ürünlerle bağlantılı olarak HomeSweetHome Interactive Services Ltd. ve HomeSweetHome'in iş veya proje ortağı olan 3. kişi veya işletmeler tarafından Kullanıcıya, yeni ürünler/hizmetler, promosyonlar, kampanyalar ve benzeri amaçlı bilgilendirme ve tanıtımların e-mail ve/veya SMS yoluyla yahut bir diğer iletişim aracıyla yapılması Kullanıcı’nın yazılı muvafakati ile ve bilgisi ve kabulü dahilinde yapılır. Kullanıcı, HomeSweetHome tarafından kendisine yapılan bu bende konu bildirim veya bilgilendirmeleri almak istememesi halinde HomeSweetHome uygulamasinde bu amaçla tahsis edilmiş üyelik ve bildirimden ayrılma talebini HomeSweetHome’e iletebilir.
+
+
+
+12.2. HomeSweetHome uygulamasi ve Kullanıcıları bu maddeye konu e-mail ve SMS bildirimlerinin veya tanıtımlarının kişisel verilerinin ihlali yahut hukuka aykırı depolanması, saldırgan reklam, haksız rekabet veya pazarlama mahiyeti arz etmeyecek şekilde kendi muvafakatleri ve rızaları ile yapıldığını HomeSweetHome uygulamasi ürün ve hizmetlerini kullanmakla kabul etmiş olurlar.
+
+
+
+uygulama Kullanıcıları kendilerine bu bende konu şekilde yapılan bilgilendirme veya bildirimlerin devam eden bildirimler için sonlandırılmasını, ilgili bildirimde kendilerine sunulan "Bilgilendirme / Bildirim Listesinden Ayrılmak İstiyorum" seçeneğini işaretleyerek temin edebilirler.
+
+
+
+13. TAZMİNAT VE RÜCU HAKKI
+
+
+
+KULLANICI, İŞBU SÖZLEŞMEYLE, DOĞRUDAN VEYA DOLAYLI OLARAK KULLANICININ HATASI İLE İLİŞKİLİ ŞEKİLDE VEYA KULLANICISININ uygulama İÇERİKLERİNİ KULLANIMINDAN YAHUT KÖTÜYE/HATALI KULLANIMINDAN KAYNAKLI BİÇİMDE; uygulama GİZLİLİK İLKELERİ VEYA DİĞER BELGE VE KURAL DÖKÜMANLARINI İHLAL ETMESİNDEN ÖTÜRÜ OLUŞAN HER NEVİ DAVALAR, İDDİALAR, ZARARLAR, KAYIPLAR, SORUMLULUKLAR VE MASRAFLARA KARŞI, BUNLARIN TAMAMININ BİZZAT VE TEK BAŞINA KULLANICI TARAFINDAN KARŞILAYACAĞINI VE HomeSweetHome’İ BU NEVİ GİDERLERDEN MUAF KILACAĞINI KABUL EDER.
+
+
+
+14. GARANTİDEN MUAFİYET
+
+
+
+14.1. HomeSweetHome, uygulama VE İÇERİKLERİNE DAİR KULLANICIYA YÖNELİK OLARAK; AYIBA, ZAPTA, ÜÇÜNCÜ KİŞİ MÜLKİYETİNE, FİKRİ HAK SAHİPLİĞİNE, DEVAMLILIĞA, DOĞRULUĞUNA, GÜVENİLİRLİĞİNE, KALİTESİNE, KESİNTİSİZLİĞE, İÇERİĞİN OLDUĞUNDAN BAŞKA BİR VASFINA VEYA İÇERİĞİN VARLIĞININ VEYA YAYININ DEVAM ETTİĞİ SÜRENİN DIŞINDA KALAN ZAMAN DİLİMİNE DAİR HERHANGİ BİR TAAHHÜT VEYA GARANTİ VERMEZ.
+
+
+
+14.2. HomeSweetHome’İN uygulama VE İÇERİKLERİKLERİNE DAİR GARANTİ MUAFİYETİNE DAİR YUKARIDAKİ HÜKÜM, HomeSweetHome’İN SAYILANLARA DAİR KASITLI EYLEMLERDE BULUNDUĞU, BULUNACAĞI, BU ŞEKİLDE HEDEFLER VE UYGULAMALAR GÖZETTİĞİ YAHUT GÖZETECEĞİ ŞEKLİNDE YORUMLANAMAZ.
+
+
+
+15. ÜCRETLENDİRME VE ÖDEME
+
+
+
+15.1. HomeSweetHome uygulamasinden sunulan içeriklerin bir kısmı ücretli ve bir kısmı ücretsiz olabilir. İçeriklerden hangisinin, hangi şekilde, hangi süre boyunca, ne şekilde ücretlendirileceğini veya ücretsiz sunulacağını belirleme hak ve yetkisi HomeSweetHome’e aittir. HomeSweetHome uygulamasindeki veya uygulama üzerinden erişim sağlanan her nevi oyun, yayın, içerik ve diğer unsurlardan ücretsiz olanların, HomeSweetHome’in kararıyla veya HomeSweetHome’in ilgili İçeriğin temininde işbirliği yaptığı kişi veya kurumların taleplerinin neticesinde daha sonra ücretli şekilde sunulması mümkündür. Ücretli şekilde sunulan İçeriklerin de aynı şekilde daha sonra daha düşük ücretle veya ücretsiz şekilde sunulmasına dair karar alma yetkisi HomeSweetHome’e aittir. HomeSweetHome bu şekilde bir değişikliğin söz konusu olması halinde Kullanıcıyı uygulama üzerinden yeterli zaman zarfı boyunca kalıcı olacak şekilde bilgilendirir.
+
+
+
+15.2. HomeSweetHome uygulamasi üzerinden yapılan her nevi Kullanıcı işlemi ve bunların varsa işlem bedelleri Kullanıcının tasarruf ve sorumluluğundadır.
+
+
+
+15.3. Kullanıcı uygulamaden sunulan ödeme işlemlerine ilişkin seçeneklerden kendisinin karar verdiği ve uygun bulduğunu kullanabilir. Kullanıcının bu ödeme alternatifi seçeneğin tabi olduğu teknik ve prosedürel kurallara uygunluğunu sağlama mükellefiyeti bizatihi kendisine aittir. HomeSweetHome uygulamasinden sunulan hizmet veya içeriklerin ücretlendirilmesi, ücretsiz şekilde sunulması, ücretlerinde değişiklik yapılması hak ve yetkisi bizatihi HomeSweetHome’e aittir.
+
+
+
+15.4. Sanal Pos/Kredi Kartı ödeme seçeneği ile yapılan işlemler söz konusu olduğunda Kullanıcının, ödeme sayfasında istenilen kredi kartı bilgileri, uygulamaden alışveriş yapan Kullanıcıların güvenliğinin en üst seviyede temin edilmesi amacıyla hiçbir şekilde www.HomeSweetHome.com veya ona hizmet veren şirketlerin sunucularında tutulmamaktadır.
+
+
+
+15.5. Kullanıcının bu şekilde ödemeye yönelik tüm işlemleri www.HomeSweetHome.com ara yüzü üzerinden banka ve Kullanıcı bilgisayarı arasında gerçekleşmekte olup bu işlemlere ilişkin HomeSweetHome tarafından sunulan hizmet burada açıklanan ile sınırlıdır.
+
+
+
+15.6. Kullanıcının tüm kredi kartı ve kişisel bilgileri, internet güvenlik standardı olan SSL Secure sistemi ile şifrelenmiştir. Bu şekilde, Kullanıcının internet üzerindeki dolaşımlarında herhangi bir şekilde bu bilgilerin istenilmeyen kişi veya kurumlar tarafından ele geçirilmesi önlenmiştir.
+
+
+
+15.7. HomeSweetHome uygulamasinden sunulan İçeriklerin edinim ve kullanımında kullanılan Joypara ve varsa diğer satın alma araçlarının geçerlilik süreleri HomeSweetHome tarafından belirlenir, değiştirilir ve düzenlenir.
+
+
+
+15.8. Joypara, HomeSweetHome uygulamasinden sunulan içeriklerden ücretli olanların Kullanıcı tarafından uygulama’de yer verilen usule uygun şekilde temin ve kullanımı mümkün olan HomeSweetHome’e özel, üçüncü kişi veya kurumlar tarafından ödeme aracı olarak kabul edilmeyen, elektronik veya sanal para vasfı bulunmayan bir HomeSweetHome aracı olup; Joypara’nın geçerlilik süresi Kullanıcı tarafından edinildiği tarihten itibaren, Kullanıcı güvenliğinin sağlanması amacıyla, bir (1) yıldır.
+
+
+
+Kullanıcı tarafından edinildiği tarihten itibaren bir yıllık süre içinde aktive edilmeyen ve/veya kullanılmayan Joypara bu süreden sonra aktive edilemez ve/veya kullanılamaz.
+
+
+
+Bir yılık sürenin sonunda Kullanıcı, kullanılamaz hale gelen Joypara’yı yeniden aktive etmek ve kullanmak isterse bunun için ilgili Joypara’nın kendisi tarafından edinildiği tarihi, miktarı, süresinde kullanmama gerekçesini, Kullanıcı ve kimlik bilgilerini HomeSweetHome’e yazılı şekilde sunarak aktivasyon talebinde bulunabilir. Bu şekilde bir talebin söz konusu olması halinde Kullanıcı talebini inceleyen HomeSweetHome talep ve başvurunun uygu ve şüphe içermeyen bir vasıfta olduğunu tespit ederse talebi kabul edebilir. Kullanıcının bu bende konu aktivasyon talebinde bulunma süresi, en geç, edinim tarihini takip eden 1 yıllık süreden sonraki 1 yıllık süredir.
+
+
+
+15.9. Kullanıcının uygulamaden yapacağı ödemelerden kaynaklanan zararlandırıcı sonuçların tazmin edilmesinden HomeSweetHome mesul değildir. İşbu sözleşmenin uygulanmasından doğan uyuşmazlıkların çözümünde İstanbul Anadolu Adliyesi Mahkemeleri ve İcra Daireleri yetkili olup işbu sözleşmenin uygulanmasından doğan ihtilafların çözümünde HomeSweetHome defter ve kayıtları münhasır delil vasfında olmak üzere kabul edilmiştir. İşbu Sözleşmenin uygulanmasından doğan uyuşmazlıkların çözümünde kanunlar ihtilafı kuralları hariç olmak üzere Türkiye Cumhuriyeti kanunları tatbik edilir.
+
+
+
+16. İÇERİK UYGUNLUĞU
+
+
+
+16.1. HomeSweetHome uygulamasindeki veya uygulama üzerinden erişim sağlanan her nevi oyun, yayın, içerik ve diğer unsurların ve özellikle oyunların, Kullanıcı yaş gruplarına uygunluğunu denetlemek ve bu hususta karar vermek yetkisi oyunculara aittir. HomeSweetHome, uygulamasindeki İçeriklerin yaş gruplarına gore uygunluğu hakkında bağlayıcı olmamak kaydıyla varsa yetkili resmi makamların yapmış olduğı değerlendirmeleri Kullanıcı ile paylaşabilir.
+
+
+
+16.2. Kullanıcının yaşının yasal rüşt sınırının altında olması halinde; HomeSweetHome İçeriklerinden istifade etmeden evvel, yasal temsilcilerine ilgili İçerik veya Oyunu bildirmesi, tercih ettiği İçerik veya Oyunun kendi yaş grubu için uygunluğunu sorması ve onun onayı ile ilgili İçerikten yararlanması veya Oyunu oynaması veya oynamaya devam etmesi önemle önerilmektedir.
+
+
+
+16.3. HomeSweetHome uygulamasi üzerinde sunulan İçeriklerde ve oyunlarda kullanılmak üzere edinilen her nevi aracın satış ve ediniminde işlem yapan Kullanıcının gerekli yasal rüştü haiz olması hukuki bir gereklilik olup bu gereği yerine getiremeyenlerin yasal temsilcilerinin izni ve gözetimi ile ilgili işlem ve edinimi gerçekleştirmeleri önerilmekte ve ilgili işlemler bu şekilde icra edilmiş olarak kabul edilmektedir.
+
+
+
+16.4. HomeSweetHome uygulamasinden sunulan içerik ve hizmetlerden ötürü Kullanıcının diğer kişi veya kurumlar ile arasındaki hiç bir nevi hukuki ilişkinin yahut taahhüdün garanti edilmesi söz konusu olmayıp bu şekilde bir yorumlama biçimi HomeSweetHome tarafından reddedilmektedir. HomeSweetHome, Kullanıcıların uygulama ile ilgili uhdelerinde bulundurdukları her nevi verinin güvenliğinin sistemsel temini bakımından elinden gelen özen ve çabayı sergiler. Ancak bu durum HomeSweetHome’in Kullanıcı hesaplarından, hesap erişim bilgilerinin güvenliğinden ve diğer uygulama içeriklerinden her hal ve şart altında tek başına sınırsız sorumluluğunun bulunduğu şeklinde yorumlanamaz.
+
+
+
+17. BAŞLIKLAR VE YORUM
+
+
+
+İşbu Sözleşmede kullanılan madde başlıklarına sadece okuma ve anlaşılma kolaylığı sağlanması amacıyla yer verilmiştir. Madde başlıkları Sözleşmenin yorumlanmasında dikkate alınmaz ve başka herhangi bir hukuki sonuç doğurmaz.
+
+
+
+18. KISMİ GEÇERSİZLİK
+
+İşbu Sözleşmenin hükümlerinden herhangi birinin herhangi bir nedenle geçersiz veya uygulanamaz bulunması halinde, söz konusu hüküm tarafların niyetini etkileyecek şekilde müsaade edilen en son dereceye kadar söz konusu hükmü uygulanabilir kılmak için gerektiği ölçüde yeniden düzenlenecektir ve işbu Sözleşmenin kalan kısmı bundan etkilenmeden tam olarak yürürlükte kalmaya devam edecektir.  Ancak ilgili hükmün yeniden düzenlenemeyeceğinin tespit edilmesi durumunda ilgili hükmün bu şartlardan ayrılabilir olduğu kabul edilecek ve geri kalan hükümlerin geçerliliğini ve uygulanabilirliğini etkilemeyecektir.
+
+
+
+19. SINIRLANDIRILMIŞ SORUMLULUK BEYANI
+
+
+
+19.1. HomeSweetHome, ZAMAN VE SÖZLEŞMENİN YÜRÜRLÜLÜK SÜRESİ İLE SINIRLI OLMAKSIZIN; HİÇBİR HAL VE ŞART ALTINDA, AKDİ, HAKSIZ FİİL NİTELİĞİNDE, OBJEKTİF SORUMLULUK VEYA DİĞER HİÇBİR HUKUKİ SORUMLULUK DÜZENLEMESİNE VEYA PRENSİBİNE DAYANILARAK; HomeSweetHome’İN İLGİLİ ZARARLARIN GERÇEKLEŞME OLASILIĞINDAN HABERDAR OLDUĞU VEYA HABERDAR OLMASI GEREKTİĞİ DURUMLARDA DAHİ VE/VEYA BU ŞEKİLDE BİR İDDİA VEYA TALEPTE BULUNULARAK; HomeSweetHome uygulamaSİNİN VE İÇERİKLERİNİN, KULLANICI TARAFINDAN KULLANIMI VEYA YANLIŞ KULLANIMINDAN KAYNAKLI HER NEVİ DOĞRUDAN, DOLAYLI, TEASDÜFİ, SONUÇ ODAKLI, KİŞİSEL, CEZAİ VEYA ÇOKLU ZARAR TAZMİNATLARINDAN; HER TÜR AĞIR İHMALDEN KAYNAKLANAN ZARARLARDAN VE SONUÇLARDAN ÖTÜRÜ KULLANICIYA VEYA KULLANICI İLE OLAN İRTİBATINDAN NEŞET EDEN HER NE ŞEKİLDE OLURSA OLSUN ÜÇÜNCÜ KİŞİLERE KARŞI HERHANGİ BİR ŞEKİLDE SORUMLU OLMAYACAKTIR.
+
+
+
+19.2. KULLANICI, BU SÖZLEŞME KAPSAMINDA SAHİP OLDUĞU HAK VE YETKİLERİN ÜÇÜNCÜ KİŞİLER TARAFINDAN İHLALİ HALİNDE BU İHLALDEN ÖTÜRÜ, İHLAL EYLEMİNDE BULUNANLARA MUKABİL DAVA İKAME ETME VEYA ŞİKAYETTE BULUNMA HAKKINI HAİZDİR. BU GİBİ DURUMLARDA HomeSweetHome, KULLANICIYI, RESMİ MAKAM VE MERCİLER NEZDİNDE İLGİLİ HAKKININ VEYA YETKİSİNİN DAYANAĞI OLAN VARSA UHDESİNDEKİ DİJİTAL VERİ VE DELİLLERİN, YASAL SAKLAMA SÜRESİ İÇİNDE VE RESMİ MAKAM VEYA MERCİLER TARAFINDAN TALEP EDİLMESİ ŞARTIYLA, BUNLARI SUNARAK, HER ZAMAN DESTEKLER.
+
+
+
+19.3. KULLANICI, HİÇ BİR HAL VE ŞART ALTINDA HomeSweetHome’E KARŞI, VARSA İLGİLİ DAYANAK EYLEMİN VEYA İHLALİN KONU EDİLDİĞİ TALEPLERİNDE BİREL İŞLEM İÇİN TEKİL ÖDEME MEBLAĞINDAN DAHA FAZLA BİR MEBLAĞI TALEP EDEMEZ.
+
+
+
+
+
+20. MUCBİR SEBEPLERİN ETKİSİ
+
+
+
+HomeSweetHome, mücbir sebepler, doğal afetler, savaş, terör saldırıları, ayaklanma, ambargo, mülki veya askeri idarelerin uygulamaları, yangın, sel, kaza, grev veya ulaşım imkanlarının kısıtlanması, yakıt, enerji, işgücü veya malzeme sıkıntıları gibi HomeSweetHome’in kontrolü dışında oluşan ve önceden tahmin edilmesi pek güç sebep ve olaylar nedeniyle işbu Sözleşme çerçevesindeki yükümlülüklerini ifa edememesi dahil ancak bununla sınırlı olmaksızın HomeSweetHome’in kontrolü dışında meydana gelen olaylardan dolayı gecikmelerden veya işbu Sözleşmeyi ifa edememekten sorumlu olmayacaktır.
+
+
+
+21. TEMLİK ve NAKİL
+
+
+
+21.1. Kullanıcı, bu sözleşme kapsamında veya HomeSweetHome uygulamasinde sunulan hizmet veya içeriklerin üzerinde doğrudan veya dolaylı şekilde uhdesinde bulundurduğu hiçbir hak veya yetkiyi, bunlarla ilgili elde bulundurma dayanağının varsa bile mülkiyet vasfı bulunması dikkate alınmaksızın, HomeSweetHome’in yazılı muvafafakati olmaksızın üçüncü kişi veya kurumlara devredemez.
+
+
+
+21.2. HomeSweetHome, bu Sözleşme kapsamında tanzim olunan veya uygulama İçerikleri ile ilgili olarak sahibi olduğu her nevi hak veya yetkiyi yahut boçlarını veya yükümlülüklerini, kısmen veya tamamen; her zaman için, Kullanıcıya bildirimde bulunmak kaydı ile üçüncü kişi veya kurumlara devir veya temlik yahut nakil edebilir.
+
+
+
+22. YETKİ
+
+
+
+HomeSweetHome ile Kullanıcıları arasında HomeSweetHome tarafından sunulan hizmetlerin kullanımı ile ilgili olarak husule gelen uyuşmazlıkların çözümünde İstanbul Anadolu Mahkemeleri ve İcra Daireleri yetkilidir.
+
+
+
+23. SÖZLEŞMENİN ETKİSİNİN YORUMLANMASI
+
+
+
+İşbu Sözleşme’nin Kullanıcı tarafından kabul edilmesi, HomeSweetHome ve Kullanıcı arasında akdedilerek tatbik edilmesi veya Kullanıcının HomeSweetHome uygulamasini veya İçerikleri kullanması Kullanıcı ve HomeSweetHome arasında herhangi bir ortak girişim, ortaklık, istihdam veya temsilcilik ilişkisi yaratmaz; bu şekilde bir yoruma mesnet gösterilemez. İşbu Sözleşme, taraflarının arasında varsa daha evvel akdedilen diğer akdi ilişkileri, bu Sözleşme hükümleri ile çatışmadığı ölçüde etkilemez.
+
+
+
+24. FERAGAT EDİLMEZLİK
+
+
+
+HomeSweetHome’in işbu Sözleşmenin herhangi bir hükmünü uygulamaması, hiçbir durumda ilgili hükümden şu anda veya gelecekte feragat edildiği şeklinde yorumlanmayacak veya hiçbir şekilde taraflardan herhangi birinin ilgili hükmü veya diğer hükümlerden herhangi birini uygulama hakkını etkilemeyecektir.
+
+
+
+HomeSweetHome’in işbu Sözleşmenin herhangi bir hükmünden veya şartından kesin olarak feragat etmesi söz konusu hükme veya şarta gelecekte uygun hareket etme yükümlülüğünden de feragatini teşkil etmez.
+
+
+
+
+
+YUKARIDAKİ KULLANIM ŞARTLARI SÖZLEŞMESİNİ OKUMUŞ VE ANLAMIŞ OLDUĞUNUZU KABUL VE BEYAN EDİYOR VE AŞAĞIDAKİ “KABUL EDİYORUM” DÜĞMESİNE TIKLAYARAK VE/VEYA HomeSweetHome İÇERİK, HİZMET VEYA OYUNLARINDAN HERHANGİ BİRİNİ KULLANARAK VEYA BU SAYILANLARA ERİŞİM SAĞLAYARAK İŞBU SÖZLEŞMENİN ŞARTLARINA TABİ OLDUĞUNUZU KABUL ETMİŞ OLUYORSUNUZ.
+    </string>
+</resources>

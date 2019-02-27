@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "858472483183",
+    "firebase_url": "https://homesweethome-server.firebaseio.com",
+    "project_id": "homesweethome-server",
+    "storage_bucket": "homesweethome-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858472483183:android:8f9168a4be24dff9",
+        "android_client_info": {
+          "package_name": "net.ddns.morigg.homesweethomeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858472483183-ua8k0huka9lgt0baumrqda3kt5v7t2rv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.ddns.morigg.homesweethomeapp",
+            "certificate_hash": "7a28086b84ceca7a077ab7ae3e667e2615aa2a4b"
+          }
+        },
+        {
+          "client_id": "858472483183-b2cogp4stfa601cn8f14linvh1uci6f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFTSfhXE1OeqPbPq5xhr-xHZkMLuyNQi4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858472483183-b2cogp4stfa601cn8f14linvh1uci6f7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

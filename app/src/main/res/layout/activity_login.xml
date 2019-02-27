@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scroll"
+    android:scrollbars="vertical"
+    android:scrollbarFadeDuration="0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeV2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="net.ddns.morigg.homesweethomeapp.LoginActivity"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/textUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="12"
+                android:hint="@string/UsernameTextHint"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/textPass"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="12"
+                android:hint="@string/PasswordTextHint"
+                android:inputType="textPassword"
+                android:layout_gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sifremihatirla"
+            android:ems="12"
+            android:layout_gravity="center"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autologin"
+            android:ems="12"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/buttonstylegreen"
+            android:textColor="@color/Black"
+            android:ems="15"
+            android:layout_gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/LoginButton" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonstylegreen"
+                    android:textColor="@color/Black"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnSignUp"
+                    android:layout_height="match_parent"
+                    android:text="@string/SignUpButton"
+                    android:layout_width="0dp" />
+
+                <Button
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/buttonstylegreen"
+                    android:textColor="@color/Black"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnForgotPass"
+                    android:layout_height="match_parent"
+                    android:text="@string/ForgotPasswordButton"
+                    android:layout_width="0dp"/>
+
+            </LinearLayout>
+
+        <Button
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btnMain"
+            android:layout_margin="5dp"
+            android:ems="15"
+            android:background="@drawable/buttonstylegreen"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Without Connection" />
+
+
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/login_resultHttpRequest"
+                android:layout_width="fill_parent"
+                android:scrollbarFadeDuration="0"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scrollbars="vertical"
+                android:layout_height="fill_parent"
+                android:maxLines="99"
+                android:lines="6" />
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_margin="15dp"
+        android:foregroundGravity="center"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
+</ScrollView>

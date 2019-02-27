@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/Red"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/disband_title"
+        android:text="@string/Navigation_ResignHomeRequestTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/Black"
+        android:gravity="center"
+        android:text="@string/Navigation_ResignHomeRequestNewAdmin"
+        android:textSize="18sp"
+        android:id="@+id/disband_newadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:gravity="center"
+        android:textColor="@drawable/spinner_enable"
+        android:id="@+id/disband_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+
+
+</LinearLayout>
