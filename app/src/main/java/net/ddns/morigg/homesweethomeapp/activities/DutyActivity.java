@@ -87,7 +87,6 @@ public class DutyActivity extends AppCompatActivity implements DutyAdd.DutyAddLi
         LocalBroadcastManager.getInstance(this).registerReceiver(mHandler,new IntentFilter("net.ddns.morigg.homesweethomeapp_FCM-MESSAGE-DUTY"));
 
 
-
         database = new DBHandlerDuty(this);
 
         recyc = (RecyclerView) findViewById(R.id.duty_recycler);
