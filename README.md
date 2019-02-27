@@ -1,7 +1,7 @@
 # HomeSweetHomeApp
 An android app for shared houses  
   
-Created By Burak BAL - 06.2018
+Created on 06/2018
   
   
 compileSdkVersion 26  
